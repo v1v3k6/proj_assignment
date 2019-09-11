@@ -2,43 +2,10 @@
 <html>
     <head>
         <title>Web Page</title>
-        <style>
-            #formLayout
-            {
-                border-style: ridge;
-                position: absolute;
-                text-align: center;
-                border-radius: 10px;
-                padding: 1%;
-                left: 0;
-                right: 0;
-                top: 0;
-                margin-top: 20%;
-                margin-bottom: 60%;
-                margin-left: 35%;
-                margin-right: 35%;
-                box-sizing: border-box;
-            }
-        </style>
+		<link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body style="text-align: center; background-image: url('bg.jpg'); background-repeat: no-repeat;">
-        <script>
-            function SayHello(name)
-            {
-                alert("Hello "+name+"!");
-                window.open("https://www.skava.com");
-                return true;
-            }
-            function LoginValidation()
-            {
-                var uname=document.form1.uname.value;
-                var pword=document.form1.pword.value;
-                if(uname=="abcd" || pword=="login")
-                    SayHello(uname);
-                else
-                    alert("Invalid credential");
-            }
-        </script>
+        <script src="script.js"></script>
         <div id="formLayout">
         <center><form name="form1" action="" method="POST">
             <table>
